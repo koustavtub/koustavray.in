@@ -239,7 +239,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -635,20 +635,22 @@ section {
 .contact .info .social-links {
   padding-left: 60px;
 }
-
+.contact .card-thumb{
+  max-width: 350px;
+}
 .contact .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: var(--bs-light);
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
+	font-size: 32px;
+	display: inline-block;
+	background: #333;
+	color: var(--bs-light);
+	line-height: 1;
+	padding: 16px 0;
+	border-radius: 50%;
+	text-align: center;
+	width: 64px;
+	height: 64px;
+	transition: 0.3s;
+	margin-right: 10px;
 }
 
 .contact .social-links a:hover {
