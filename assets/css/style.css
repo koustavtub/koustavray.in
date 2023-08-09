@@ -44,13 +44,13 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--bs-light);
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #2eafec;
-  color: #fff;
+  color: var(--bs-light);
 }
 
 .back-to-top.active {
@@ -94,7 +94,7 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
+  color: var(--bs-light);
   text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ h6 {
   font-size: 18px;
   display: inline-block;
   background: #212626;
-  color: #fff;
+  color: var(--bs-light);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -115,7 +115,7 @@ h6 {
 
 #header .profile .social-links a:hover {
   background: #57CC99;
-  color: #fff;
+  color: var(--bs-light);
   text-decoration: none;
 }
 
@@ -187,7 +187,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   text-decoration: none;
-  color: #fff;
+  color: var(--bs-light);
 }
 
 .nav-menu a:hover i,
@@ -208,7 +208,7 @@ h6 {
   transition: all 0.4s;
   outline: none !important;
   background-color: #57CC99;
-  color: #fff;
+  color: var(--bs-light);
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -259,18 +259,18 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: var(--bs-light);
 }
 
 #hero p {
-  color: #fff;
+  color: var(--bs-light);
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #fff;
+  color: var(--bs-light);
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #57CC99;
@@ -526,13 +526,17 @@ section {
   border: 2px solid #EBB02D;
 }
 /*--------------------------------------------------------------
-# Services
+# Hobbies
 --------------------------------------------------------------*/
-.services .icon-box {
+.hobbies{
+  background: #212626;
+  color: var(--bs-light);
+}
+.hobbies .icon-box {
   margin-bottom: 20px;
 }
 
-.services .icon {
+.hobbies .icon {
   float: left;
   display: flex;
   align-items: center;
@@ -545,52 +549,54 @@ section {
   border: 1px solid #57CC99;
 }
 
-.services .icon i {
-  color: #fff;
+.hobbies .icon i {
+  color: var(--bs-light);
   font-size: 24px;
   line-height: 0;
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
+.hobbies .icon-box:hover .icon {
+  background: var(--bs-light);
 }
 
-.services .icon-box:hover .icon i {
+.hobbies .icon-box:hover .icon i {
   color: #57CC99;
 }
 
-.services .title {
+.hobbies .title {
   margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.hobbies .title a {
   color: #343a40;
 }
 
-.services .title a:hover {
+.hobbies .title a:hover {
   color: #57CC99;
 }
 
-.services .description {
+.hobbies .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
 }
 /*--------------------------------------------------------------
+# Languages
+--------------------------------------------------------------*/
+.languages{
+  background: #303D32;
+  color: var(--bs-light);
+}
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact {
+  background: #212626;
+  color: var(--bs-light);
   padding-bottom: 130px;
-}
-
-.contact .info {
-  padding: 30px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
@@ -599,7 +605,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,7 +618,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  
 }
 
 .contact .info p {
@@ -630,11 +636,11 @@ section {
   padding-left: 60px;
 }
 
-.contact .info .social-links a {
+.contact .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: var(--bs-light);
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -645,112 +651,16 @@ section {
   margin-right: 10px;
 }
 
-.contact .info .social-links a:hover {
+.contact .social-links a:hover {
   background: #57CC99;
-  color: #fff;
+  color: var(--bs-light);
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #57CC99;
-  color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact .php-email-form label {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #57CC99;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  color: var(--bs-light);
 }
 
 @keyframes animate-loading {
