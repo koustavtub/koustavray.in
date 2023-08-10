@@ -293,6 +293,9 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+  #hero {
+    background-position: 70%;
+  }
 }
 
 /*--------------------------------------------------------------
